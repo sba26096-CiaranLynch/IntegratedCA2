@@ -1,0 +1,16 @@
+Data Dictionary (With Units and Explanation)
+Variable	Data Type	Unit	Description	Expected Values / Range
+County	Categorical	N/A	Irish county associated with the prospective solar PV installation opportunity or site.	26 counties of the Republic of Ireland
+Forecast_Year	Integer	Year	Future planning year for the synthetic solar PV market observation.	2027 - 2034
+Local_Mean_Household_Disposable_Income_EUR	Numeric	EUR/year	Synthetic estimate of mean annual disposable household income in the local market represented by the observation. This is a local purchasing-power indicator and not the income of a specific applicant.	Typically EUR 35,000 - 125,000
+Electricity_Cost_Index	Numeric	Index	Synthetic electricity-cost pressure index for the customer environment. A value of 100 represents the scenario baseline; values above 100 indicate higher-than-baseline cost pressure and values below 100 indicate lower-than-baseline cost pressure.	Typically 65 - 150; 100 = scenario baseline
+Solar_Resource_Index	Numeric	Score	Relative solar-resource potential for the observation, representing the scenario effect of location and solar availability. It is an index rather than a physical irradiance measurement.	1 - 10; higher = stronger solar resource
+Site_Suitability_Score	Numeric	Score	Suitability of the prospective site for solar PV, reflecting factors such as usable roof or land area, orientation and shading.	1 - 10; higher = more suitable
+Grid_Connection_Accessibility_Score	Numeric	Score	Relative ease of electricity-network access or connection for the prospective solar PV installation.	1 - 10; higher = easier access or connection
+Scenario_Grant_Support_EUR	Numeric	EUR	Synthetic future grant or support amount used for the teaching scenario. It is not an official future SEAI entitlement, tariff or government forecast.	Non-negative EUR; varies by customer segment
+Installation_Cost_Index	Numeric	Index	Relative solar PV installation-cost index. A value of 100 represents the scenario baseline; values above 100 indicate higher-than-baseline installation costs and values below 100 indicate lower-than-baseline costs.	Typically 55 - 145; 100 = scenario baseline
+Planning_and_Site_Constraint_Index	Numeric	Score	Synthetic constraint index covering planning, site, delivery and project-development barriers. Higher values represent stronger constraints.	1 - 10; higher = stronger constraints
+Customer_Segment	Categorical	N/A	Type of prospective solar PV customer or project represented by the observation.	Residential, SME, Farm, Public/Community
+Solar_PV_Demand_Level	Categorical	N/A	Synthetic future market-demand category representing the expected level of solar PV demand for the observation.	Low, Average, High
+Projected_Solar_PV_Installation_Capacity_kWp	Numeric	kWp	Projected solar PV installation capacity for the synthetic opportunity or site. kWp represents installed peak capacity and not annual energy generation.	Positive values; typically about 2 - 500 kWp, with substantial variation by customer segment
+
